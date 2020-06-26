@@ -15,7 +15,11 @@ class PvpViewController: UIViewController {
     @IBOutlet weak var choseView: UIView!
     
     //Player
-    var player: Int?
+    var player: String?
+    
+    //Game
+    var game: Game?
+    
     //Buttons outlets
     @IBOutlet weak var but0: UIButton!
     @IBOutlet weak var but1: UIButton!
@@ -56,62 +60,97 @@ class PvpViewController: UIViewController {
     
     
     
-    
     //Functions that first player chose
     //0 is to represent O and 1 to represent X
     @IBAction func choseO(_ sender: Any) {
-        player = 0
+        player = "O"
         UIView.animate(withDuration: 0.3, animations: {
              self.choseView.alpha = 0
         }, completion:  {
            (value: Bool) in
                self.choseView.isHidden = true
         })
+        startGame(player: player!)
     }
     
     @IBAction func choseX(_ sender: Any) {
-        player = 1
+        player = "X"
         UIView.animate(withDuration: 0.3, animations: {
              self.choseView.alpha = 0
         }, completion:  {
            (value: Bool) in
                self.choseView.isHidden = true
         })
+        startGame(player: player!)
+    }
+    
+    
+    //function to instantiate Game class to start the game
+    func startGame(player: String){
+        game = Game(player: self.player!)
     }
     
     
     
     //Functions of click in the game
+    //pstn1 and pstn2 (position) represents the numbers os button in a matrix
     @IBAction func btn0(_ sender: Any) {
+        insertInBoard(btn: but0, pstn1: 0, pstn2: 0)
     }
     
     @IBAction func btn1(_ sender: Any) {
+        insertInBoard(btn: but1, pstn1: 0, pstn2: 1)
     }
     
     @IBAction func btn2(_ sender: Any) {
+        insertInBoard(btn: but2, pstn1: 0, pstn2: 2)
     }
     
-    
-    
     @IBAction func btn3(_ sender: Any) {
+        insertInBoard(btn: but3, pstn1: 1, pstn2: 0)
     }
     
     @IBAction func btn4(_ sender: Any) {
+        insertInBoard(btn: but4, pstn1: 1, pstn2: 1)
     }
     
     @IBAction func btn5(_ sender: Any) {
+        insertInBoard(btn: but5, pstn1: 1, pstn2: 2)
     }
     
-    
-    
     @IBAction func btn6(_ sender: Any) {
+        insertInBoard(btn: but6, pstn1: 2, pstn2: 0)
     }
     
     @IBAction func btn7(_ sender: Any) {
+        insertInBoard(btn: but7, pstn1: 2, pstn2: 1)
     }
     
     @IBAction func btn8(_ sender: Any) {
+        insertInBoard(btn: but8, pstn1: 2, pstn2: 2)
     }
     
+    
+    func insertInBoard(btn: UIButton, pstn1: Int, pstn2: Int){
+         //pstn1 and pstn2 (position) represents the numbers os button in a matrix
+        if (game?.canMakePlay(pst1: pstn1, pst2: pstn2) == true){
+            btn.setTitle(player, for: .normal)
+            player = game?.invertPlayer(player: player!)
+        }
+        else{
+            showAlertMessage(title: "Jogada inválida", message: "Essa posição já está ocupada. \nEscolha outra posição!")
+        }
+    }
+    
+    
+    func showAlertMessage(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+             let ok = UIAlertAction(title: "Certo!", style: .default, handler: { action in
+             })
+             alert.addAction(ok)
+             DispatchQueue.main.async(execute: {
+                self.present(alert, animated: true)
+        })
+    }
     
 }

@@ -88,7 +88,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-vO-vme">
                                         <rect key="frame" x="60.5" y="1" width="87.5" height="92"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                        <state key="normal" title="O"/>
                                         <connections>
                                             <action selector="btn0:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="NAi-0X-Hmx"/>
                                         </connections>
@@ -96,7 +95,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jT-aW-1Za">
                                         <rect key="frame" x="158.5" y="0.0" width="97" height="94"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                        <state key="normal" title="X"/>
                                         <connections>
                                             <action selector="btn1:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="Whz-36-KhO"/>
                                         </connections>
@@ -104,7 +102,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9g-It-UPy">
                                         <rect key="frame" x="264" y="0.5" width="90.5" height="93"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                        <state key="normal" title="O"/>
                                         <connections>
                                             <action selector="btn2:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="voA-I2-WBV"/>
                                         </connections>
@@ -112,7 +109,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3c-Qq-1fP">
                                         <rect key="frame" x="60.5" y="103.5" width="87.5" height="92"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                        <state key="normal" title="X"/>
                                         <connections>
                                             <action selector="btn3:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="t17-Pn-m4O"/>
                                         </connections>
@@ -120,7 +116,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZ3-Z1-ZA9">
                                         <rect key="frame" x="160.5" y="99.5" width="93" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                        <state key="normal" title="O"/>
                                         <connections>
                                             <action selector="btn4:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="rrx-8J-HyL"/>
                                         </connections>
@@ -128,7 +123,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSt-MC-7h1">
                                         <rect key="frame" x="264" y="103.5" width="90.5" height="92"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                        <state key="normal" title="X"/>
                                         <connections>
                                             <action selector="btn5:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="I9Z-1y-dIC"/>
                                         </connections>
@@ -136,7 +130,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwb-yZ-MCW">
                                         <rect key="frame" x="60.5" y="211" width="87.5" height="88"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                        <state key="normal" title="O"/>
                                         <connections>
                                             <action selector="btn6:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="wXR-S3-dlS"/>
                                         </connections>
@@ -144,7 +137,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyE-FH-kBi">
                                         <rect key="frame" x="161" y="211" width="92" height="88"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                        <state key="normal" title="X"/>
                                         <connections>
                                             <action selector="btn7:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="56H-sx-2D6"/>
                                         </connections>
@@ -152,7 +144,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLv-Nw-W1n">
                                         <rect key="frame" x="264" y="211" width="90.5" height="88"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                        <state key="normal" title="O"/>
                                         <connections>
                                             <action selector="btn8:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="bjT-tB-REM"/>
                                         </connections>
