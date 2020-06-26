@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EE2B8AFE24A3F987008DD622 /* PvpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2B8AFD24A3F987008DD622 /* PvpViewController.swift */; };
 		EE2B8B0024A3F9A9008DD622 /* PvcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2B8AFF24A3F9A9008DD622 /* PvcViewController.swift */; };
+		EE2B8B0324A40B82008DD622 /* tabuleiro.png in Resources */ = {isa = PBXBuildFile; fileRef = EE2B8B0224A40B82008DD622 /* tabuleiro.png */; };
 		EE6AC43E24A3E9320035B786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AC43D24A3E9320035B786 /* AppDelegate.swift */; };
 		EE6AC44024A3E9320035B786 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AC43F24A3E9320035B786 /* SceneDelegate.swift */; };
 		EE6AC44224A3E9320035B786 /* InitialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6AC44124A3E9320035B786 /* InitialScreenViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		EE2B8AFD24A3F987008DD622 /* PvpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PvpViewController.swift; sourceTree = "<group>"; };
 		EE2B8AFF24A3F9A9008DD622 /* PvcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PvcViewController.swift; sourceTree = "<group>"; };
+		EE2B8B0224A40B82008DD622 /* tabuleiro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabuleiro.png; path = ../../../../../Downloads/tabuleiro.png; sourceTree = "<group>"; };
 		EE6AC43A24A3E9320035B786 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6AC43D24A3E9320035B786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE6AC43F24A3E9320035B786 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EE2B8B0124A40B71008DD622 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EE2B8B0224A40B82008DD622 /* tabuleiro.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		EE6AC43124A3E9320035B786 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		EE6AC43C24A3E9320035B786 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				EE2B8B0124A40B71008DD622 /* Assets */,
 				EE2B8AFC24A3EC7D008DD622 /* Model */,
 				EE2B8AFB24A3EC75008DD622 /* View */,
 				EE2B8AF924A3EC5A008DD622 /* Controller */,
@@ -158,6 +169,7 @@
 				EE6AC44A24A3E9360035B786 /* LaunchScreen.storyboard in Resources */,
 				EE6AC44724A3E9360035B786 /* Assets.xcassets in Resources */,
 				EE6AC44524A3E9320035B786 /* Main.storyboard in Resources */,
+				EE2B8B0324A40B82008DD622 /* tabuleiro.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,15 @@
 import UIKit
 
 class PvpViewController: UIViewController {
-
+    @IBOutlet weak var blackView: UIView!
+    @IBOutlet weak var btnGotIt: UIButton!
+    @IBOutlet weak var gameImage: UIImageView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        blackView.isHidden = false
+        btnGotIt.isHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,6 +25,17 @@ class PvpViewController: UIViewController {
     }
     
 
+    //function to make blackView hide with animation
+    @IBAction func gotIt(_ sender: Any) {
+        UIView.animate(withDuration: 0.3, animations: {
+             self.blackView.alpha = 0
+        }, completion:  {
+           (value: Bool) in
+               self.blackView.isHidden = true
+        })
+        
+        gameImage.alpha = 1
+    }
     /*
     // MARK: - Navigation
 
