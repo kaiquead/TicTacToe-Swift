@@ -40,6 +40,16 @@ class Game{
         return self.player
     }
     
+    func draw()->Bool{
+        for i in 0...board.count-1{
+            for j in 0...board[i].count-1{
+                if(board[i][j] == ""){
+                    return false
+                }
+            }
+        }
+        return true
+    }
     
     
    

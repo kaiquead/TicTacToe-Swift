@@ -140,6 +140,10 @@ class PvpViewController: UIViewController {
         else{
             showAlertMessage(title: "Jogada inválida", message: "Essa posição já está ocupada. \nEscolha outra posição!")
         }
+        
+        if(game?.draw() == true){
+            showAlertMessage(title: "Deu velha!", message: "Empate!")
+        }
     }
     
     
