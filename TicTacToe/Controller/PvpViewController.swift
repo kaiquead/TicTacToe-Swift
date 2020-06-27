@@ -157,6 +157,42 @@ class PvpViewController: UIViewController {
         }
     }
     
+
+    @IBAction func playAgain(_ sender: Any) {
+        reset()
+        
+        choseView.alpha = 0
+        choseView.isHidden = false
+        UIView.animate(withDuration: 0.7, animations: {
+             self.choseView.alpha = 1
+        }, completion:  nil)
+        
+        UIView.animate(withDuration: 0.3, animations: {
+             self.finishGameView.alpha = 0
+        }, completion:  {
+           (value: Bool) in
+               self.finishGameView.isHidden = true
+        })
+    }
+    
+    @IBAction func goToMenu(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    func reset()->Void{
+        but0.setTitle(nil, for: .normal)
+        but1.setTitle(nil, for: .normal)
+        but2.setTitle(nil, for: .normal)
+        but3.setTitle(nil, for: .normal)
+        but4.setTitle(nil, for: .normal)
+        but5.setTitle(nil, for: .normal)
+        but6.setTitle(nil, for: .normal)
+        but7.setTitle(nil, for: .normal)
+        but8.setTitle(nil, for: .normal)
+    }
+    
+    
+    
     
     func showAlertMessage(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

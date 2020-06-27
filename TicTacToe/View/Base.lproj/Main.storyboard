@@ -85,63 +85,63 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabuleiro.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bwp-If-cPz">
                                         <rect key="frame" x="31" y="0.0" width="352" height="299"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-vO-vme">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-vO-vme">
                                         <rect key="frame" x="60.5" y="1" width="87.5" height="92"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                         <connections>
                                             <action selector="btn0:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="NAi-0X-Hmx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jT-aW-1Za">
-                                        <rect key="frame" x="158.5" y="0.0" width="97" height="78"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jT-aW-1Za">
+                                        <rect key="frame" x="158.5" y="0.0" width="97" height="94"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                         <connections>
                                             <action selector="btn1:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="Whz-36-KhO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9g-It-UPy">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9g-It-UPy">
                                         <rect key="frame" x="264" y="0.5" width="90.5" height="93"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                         <connections>
                                             <action selector="btn2:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="voA-I2-WBV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3c-Qq-1fP">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3c-Qq-1fP">
                                         <rect key="frame" x="60.5" y="103.5" width="87.5" height="92"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                         <connections>
                                             <action selector="btn3:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="t17-Pn-m4O"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZ3-Z1-ZA9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZ3-Z1-ZA9">
                                         <rect key="frame" x="160.5" y="99.5" width="93" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                         <connections>
                                             <action selector="btn4:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="rrx-8J-HyL"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSt-MC-7h1">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSt-MC-7h1">
                                         <rect key="frame" x="264" y="103.5" width="90.5" height="92"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                         <connections>
                                             <action selector="btn5:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="I9Z-1y-dIC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwb-yZ-MCW">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwb-yZ-MCW">
                                         <rect key="frame" x="60.5" y="211" width="87.5" height="88"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                         <connections>
                                             <action selector="btn6:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="wXR-S3-dlS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyE-FH-kBi">
-                                        <rect key="frame" x="161" y="221" width="92" height="78"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyE-FH-kBi">
+                                        <rect key="frame" x="161" y="211" width="92" height="88"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                         <connections>
                                             <action selector="btn7:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="56H-sx-2D6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLv-Nw-W1n">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLv-Nw-W1n">
                                         <rect key="frame" x="264" y="211" width="90.5" height="88"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                         <connections>
@@ -298,6 +298,9 @@
                                                         <state key="normal" title="Jogar novamente" image="retry.png">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="playAgain:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="EqK-Bf-7pc"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOU-i8-Hcy">
                                                         <rect key="frame" x="210" y="0.0" width="81" height="50"/>
@@ -305,6 +308,9 @@
                                                         <state key="normal" title="Sair" image="back.png">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="goToMenu:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="u26-is-WJS"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
