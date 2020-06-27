@@ -13,6 +13,11 @@ class PvpViewController: UIViewController {
     @IBOutlet weak var btnGotIt: UIButton!
     @IBOutlet weak var gameImage: UIImageView!
     @IBOutlet weak var choseView: UIView!
+    @IBOutlet weak var finishGameView: UIView!
+    
+    @IBOutlet weak var lbDrawWinner: UILabel!
+    @IBOutlet weak var lbScore: UIView!
+    
     
     //Player
     var player: String?
@@ -141,8 +146,14 @@ class PvpViewController: UIViewController {
             showAlertMessage(title: "Jogada inválida", message: "Essa posição já está ocupada. \nEscolha outra posição!")
         }
         
+        //If game have a draw, the finish screen will appear
         if(game?.draw() == true){
-            showAlertMessage(title: "Deu velha!", message: "Empate!")
+            lbDrawWinner.text = "Deu velha!!!"
+            finishGameView.alpha = 0
+            finishGameView.isHidden = false
+            UIView.animate(withDuration: 0.7, animations: {
+                 self.finishGameView.alpha = 1
+            }, completion:  nil)
         }
     }
     
