@@ -25,6 +25,10 @@ class PvpViewController: UIViewController {
     //Game
     var game: Game?
     
+    //Score
+    private var scoreO = 0
+    private var scoreX = 0
+    
     //Buttons outlets
     @IBOutlet weak var but0: UIButton!
     @IBOutlet weak var but1: UIButton!
@@ -49,18 +53,9 @@ class PvpViewController: UIViewController {
 
     //function to make blackView hide with animation and choseView come with animation
     @IBAction func gotIt(_ sender: Any) {
-       UIView.animate(withDuration: 0.3, animations: {
-             self.blackView.alpha = 0
-        }, completion:  {
-           (value: Bool) in
-               self.blackView.isHidden = true
-        })
         
-        choseView.alpha = 0
-        choseView.isHidden = false
-        UIView.animate(withDuration: 0.7, animations: {
-             self.choseView.alpha = 1
-        }, completion:  nil)
+        animateViewOut(view: blackView)
+        animateViewIn(view: choseView)
     }
     
     
@@ -69,23 +64,13 @@ class PvpViewController: UIViewController {
     //0 is to represent O and 1 to represent X
     @IBAction func choseO(_ sender: Any) {
         player = "O"
-        UIView.animate(withDuration: 0.3, animations: {
-             self.choseView.alpha = 0
-        }, completion:  {
-           (value: Bool) in
-               self.choseView.isHidden = true
-        })
+        animateViewOut(view: choseView)
         startGame(player: player!)
     }
     
     @IBAction func choseX(_ sender: Any) {
         player = "X"
-        UIView.animate(withDuration: 0.3, animations: {
-             self.choseView.alpha = 0
-        }, completion:  {
-           (value: Bool) in
-               self.choseView.isHidden = true
-        })
+        animateViewOut(view: choseView)
         startGame(player: player!)
     }
     
@@ -148,38 +133,25 @@ class PvpViewController: UIViewController {
         }
         
         //check if have winner
-        if(game?.checkVitory()==0 || game?.checkVitory()==1){
-            print("alguem ganhou")
+        if(game?.checkVitory()==0){
+            print("Jogador O venceu")
+            lbDrawWinner.text = "Vitória do jogador O"
+            animateViewIn(view: finishGameView)
             return
         }
         
         //If game have a draw, the finish screen will appear
         if(game?.draw() == true){
             lbDrawWinner.text = "Deu velha!!!"
-            finishGameView.alpha = 0
-            finishGameView.isHidden = false
-            UIView.animate(withDuration: 0.7, animations: {
-                 self.finishGameView.alpha = 1
-            }, completion:  nil)
+            animateViewIn(view: finishGameView)
         }
     }
     
 
     @IBAction func playAgain(_ sender: Any) {
         reset()
-        
-        choseView.alpha = 0
-        choseView.isHidden = false
-        UIView.animate(withDuration: 0.7, animations: {
-             self.choseView.alpha = 1
-        }, completion:  nil)
-        
-        UIView.animate(withDuration: 0.3, animations: {
-             self.finishGameView.alpha = 0
-        }, completion:  {
-           (value: Bool) in
-               self.finishGameView.isHidden = true
-        })
+        animateViewIn(view: choseView)
+        animateViewOut(view: finishGameView)
     }
     
     @IBAction func goToMenu(_ sender: Any) {
@@ -198,7 +170,22 @@ class PvpViewController: UIViewController {
         but8.setTitle(nil, for: .normal)
     }
     
+    func animateViewIn(view: UIView){
+        view.alpha = 0
+        view.isHidden = false
+        UIView.animate(withDuration: 0.7, animations: {
+            view.alpha = 1
+        }, completion:  nil)
+    }
     
+    func animateViewOut(view: UIView){
+        UIView.animate(withDuration: 0.3, animations: {
+             view.alpha = 0
+        }, completion:  {
+           (value: Bool) in
+               view.isHidden = true
+        })
+    }
     
     
     func showAlertMessage(title: String, message: String){
