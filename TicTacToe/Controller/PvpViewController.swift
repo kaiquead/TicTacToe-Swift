@@ -152,7 +152,9 @@ class PvpViewController: UIViewController {
         
         //If game have a draw, the finish screen will appear
         if(game?.draw() == true){
+            print("Deu velha")
             lbDrawWinner.text = "Deu velha!!!"
+            loadScoreGame()
             animateViewIn(view: finishGameView)
         }
     }

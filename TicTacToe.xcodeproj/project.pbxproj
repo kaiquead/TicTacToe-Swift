@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		EE2B8AFD24A3F987008DD622 /* PvpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PvpViewController.swift; sourceTree = "<group>"; };
-		EE2B8AFF24A3F9A9008DD622 /* PvcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PvcViewController.swift; sourceTree = "<group>"; };
+		EE2B8AFF24A3F9A9008DD622 /* PvcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PvcViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		EE2B8B0224A40B82008DD622 /* tabuleiro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabuleiro.png; path = ../../../../../Downloads/tabuleiro.png; sourceTree = "<group>"; };
 		EE6AC43A24A3E9320035B786 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6AC43D24A3E9320035B786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
