@@ -16,7 +16,7 @@ class PvpViewController: UIViewController {
     @IBOutlet weak var finishGameView: UIView!
     
     @IBOutlet weak var lbDrawWinner: UILabel!
-    @IBOutlet weak var lbScore: UIView!
+    @IBOutlet weak var lbScore: UILabel!
     
     
     //Player
@@ -48,6 +48,7 @@ class PvpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadScoreGame()
     }
     
 
@@ -135,9 +136,18 @@ class PvpViewController: UIViewController {
         //check if have winner
         if(game?.checkVitory()==0){
             print("Jogador O venceu")
+            scoreO+=1
+            loadScoreGame()
             lbDrawWinner.text = "Vitória do jogador O"
             animateViewIn(view: finishGameView)
             return
+        }
+        else if(game?.checkVitory()==1){
+            print("Jogador X venceu")
+            scoreX+=1
+            loadScoreGame()
+            lbDrawWinner.text = "Vitória do jogador X"
+            animateViewIn(view: finishGameView)
         }
         
         //If game have a draw, the finish screen will appear
@@ -156,6 +166,10 @@ class PvpViewController: UIViewController {
     
     @IBAction func goToMenu(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    func loadScoreGame(){
+        lbScore.text = "Score\n O: \(scoreO)      X: \(scoreX)"
     }
     
     func reset()->Void{

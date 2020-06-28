@@ -316,9 +316,9 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nil-hg-wBT">
-                                        <rect key="frame" x="182.5" y="260.5" width="49" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nil-hg-wBT">
+                                        <rect key="frame" x="182" y="260.5" width="50.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -372,7 +372,7 @@
                         <outlet property="finishGameView" destination="Tir-FC-pHm" id="jdj-HU-3Al"/>
                         <outlet property="gameImage" destination="Bwp-If-cPz" id="66m-F8-pKM"/>
                         <outlet property="lbDrawWinner" destination="0c5-Vg-3c8" id="Upu-5y-FkE"/>
-                        <outlet property="lbScore" destination="nil-hg-wBT" id="hvC-xH-J21"/>
+                        <outlet property="lbScore" destination="nil-hg-wBT" id="EfX-Q7-0O1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SH7-BF-rXC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
