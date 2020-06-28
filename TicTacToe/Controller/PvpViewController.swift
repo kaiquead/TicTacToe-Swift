@@ -144,6 +144,13 @@ class PvpViewController: UIViewController {
         }
         else{
             showAlertMessage(title: "Jogada inválida", message: "Essa posição já está ocupada. \nEscolha outra posição!")
+            return
+        }
+        
+        //check if have winner
+        if(game?.checkVitory()==0 || game?.checkVitory()==1){
+            print("alguem ganhou")
+            return
         }
         
         //If game have a draw, the finish screen will appear

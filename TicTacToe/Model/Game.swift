@@ -51,6 +51,101 @@ class Game{
         return true
     }
     
+    func checkVitory()->Int{
+        var counterO: Int = 0
+        var counterX: Int = 0
+        
+        //this loop is for check the horizontals and add 1 in your specific counter when found the move. Ex: found X? CounterX add 1
+        for i in 0...board.count-1{
+            for j in 0...board.count-1{
+                if(board[i][j]=="O"){
+                    counterO+=1
+                }
+                if(board[i][j]=="X"){
+                    counterX+=1
+                }
+            }
+            if(counterO==3){
+                return 0
+            } else if(counterX==3){
+                return 1
+            }
+            //if dont found a winner in a line, reset the parameters
+            counterO = 0
+            counterX = 0
+        }
+        
+        
+        //this loop is for check the verticals and add 1 in your specific counter when found the move. Ex: found X? CounterX add 1
+        for i in 0...board.count-1{
+            for j in 0...board.count-1{
+                if(board[j][i]=="O"){
+                    counterO+=1
+                }
+                if(board[j][i]=="X"){
+                    counterX+=1
+                }
+            }
+            if(counterO==3){
+                return 0
+            } else if(counterX==3){
+                return 1
+            }
+            //if dont found a winner in a line, reset the parameters
+            counterO = 0
+            counterX = 0
+        }
+        
+        
+        //this loop is for check the first vertical and add 1 in your specific counter when found the move. Ex: found X? CounterX add 1
+        
+        for var i in 0...board.count-1{
+            for j in 0...board.count-1{
+                if(board[i][j]=="O"){
+                    counterO+=1
+                }
+                if(board[i][j]=="X"){
+                    counterX+=1
+                }
+                i+=1
+            }
+            if(counterO==3){
+                return 0
+            } else if(counterX==3){
+                return 1
+            }
+            //if dont found a winner in a line, reset the parameters
+            counterO = 0
+            counterX = 0
+            break
+        }
+        
+        
+        //this loop is for check the second vertical and add 1 in your specific counter when found the move. Ex: found X? CounterX add 1
+               
+               for var i in 0...board.count-1{
+                for j in stride(from: board.count-1, through: 0, by: -1) {
+                       if(board[i][j]=="O"){
+                           counterO+=1
+                       }
+                       if(board[i][j]=="X"){
+                           counterX+=1
+                       }
+                       i+=1
+                   }
+                   if(counterO==3){
+                       return 0
+                   } else if(counterX==3){
+                       return 1
+                   }
+                   //if dont found a winner in a line, reset the parameters
+                   counterO = 0
+                   counterX = 0
+                   break
+               }
+        return -1
+    }
+    
     
    
     
