@@ -31,6 +31,25 @@ class Game{
         return true
     }
     
+    func canMakePlayAleatory()->[Int]{
+        var stop = false
+        var result: [Int] = []
+        while(stop==false){
+            let pst1 = Int.random(in: 0...2)
+            let pst2 = Int.random(in: 0...2)
+            for _ in board{
+                if(board[pst1][pst2] == ""){
+                    board[pst1][pst2] = self.player
+                    result.append(pst1)
+                    result.append(pst2)
+                    player = invertPlayer(player: player)
+                    stop = true
+                }
+            }
+        }
+        return result
+    }
+    
     func invertPlayer(player: String)->String{
         if(player == "O"){
             self.player = "X"

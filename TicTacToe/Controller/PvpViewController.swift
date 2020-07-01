@@ -122,6 +122,7 @@ class PvpViewController: UIViewController {
     }
     
     
+    //function to insert the move in the board (PVP)
     func insertInBoard(btn: UIButton, pstn1: Int, pstn2: Int){
          //pstn1 and pstn2 (position) represents the numbers os button in a matrix
         if (game?.canMakePlay(pst1: pstn1, pst2: pstn2) == true){
@@ -148,6 +149,7 @@ class PvpViewController: UIViewController {
             loadScoreGame()
             lbDrawWinner.text = "Vitória do jogador X"
             animateViewIn(view: finishGameView)
+            return
         }
         
         //If game have a draw, the finish screen will appear
