@@ -29,8 +29,8 @@ class PvcViewController: UIViewController {
     
     //score
     @IBOutlet weak var lbScore: UILabel!
-    var scoreO: Int = 0
-    var scoreX: Int = 0
+    //var scoreO: Int = 0
+    //var scoreX: Int = 0
     var scoreComputer: Int = 0
     var scorePlayer: Int = 0
     

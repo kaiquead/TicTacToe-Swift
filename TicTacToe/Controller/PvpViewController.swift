@@ -21,6 +21,7 @@ class PvpViewController: UIViewController {
     
     //Player
     var player: String?
+    var player1Choice: String?
     
     //Game
     var game: Game?
@@ -28,6 +29,8 @@ class PvpViewController: UIViewController {
     //Score
     private var scoreO = 0
     private var scoreX = 0
+    private var scorePlayer1 = 0
+    private var scorePlayer2 = 0
     
     //Buttons outlets
     @IBOutlet weak var but0: UIButton!
@@ -64,13 +67,15 @@ class PvpViewController: UIViewController {
     //Functions that first player chose
     //0 is to represent O and 1 to represent X
     @IBAction func choseO(_ sender: Any) {
-        player = "O"
+        self.player = "O"
+        player1Choice = "O"
         animateViewOut(view: choseView)
         startGame(player: player!)
     }
     
     @IBAction func choseX(_ sender: Any) {
-        player = "X"
+        self.player = "X"
+        player1Choice = "X"
         animateViewOut(view: choseView)
         startGame(player: player!)
     }
@@ -86,48 +91,48 @@ class PvpViewController: UIViewController {
     //Functions of click in the game
     //pstn1 and pstn2 (position) represents the numbers os button in a matrix
     @IBAction func btn0(_ sender: Any) {
-        insertInBoard(btn: but0, pstn1: 0, pstn2: 0)
+        insertInBoard(btn: but0, pstn1: 0, pstn2: 0, player: self.player!)
     }
     
     @IBAction func btn1(_ sender: Any) {
-        insertInBoard(btn: but1, pstn1: 0, pstn2: 1)
+        insertInBoard(btn: but1, pstn1: 0, pstn2: 1, player: self.player!)
     }
     
     @IBAction func btn2(_ sender: Any) {
-        insertInBoard(btn: but2, pstn1: 0, pstn2: 2)
+        insertInBoard(btn: but2, pstn1: 0, pstn2: 2, player: self.player!)
     }
     
     @IBAction func btn3(_ sender: Any) {
-        insertInBoard(btn: but3, pstn1: 1, pstn2: 0)
+        insertInBoard(btn: but3, pstn1: 1, pstn2: 0, player: self.player!)
     }
     
     @IBAction func btn4(_ sender: Any) {
-        insertInBoard(btn: but4, pstn1: 1, pstn2: 1)
+        insertInBoard(btn: but4, pstn1: 1, pstn2: 1, player: self.player!)
     }
     
     @IBAction func btn5(_ sender: Any) {
-        insertInBoard(btn: but5, pstn1: 1, pstn2: 2)
+        insertInBoard(btn: but5, pstn1: 1, pstn2: 2, player: self.player!)
     }
     
     @IBAction func btn6(_ sender: Any) {
-        insertInBoard(btn: but6, pstn1: 2, pstn2: 0)
+        insertInBoard(btn: but6, pstn1: 2, pstn2: 0, player: self.player!)
     }
     
     @IBAction func btn7(_ sender: Any) {
-        insertInBoard(btn: but7, pstn1: 2, pstn2: 1)
+        insertInBoard(btn: but7, pstn1: 2, pstn2: 1, player: self.player!)
     }
     
     @IBAction func btn8(_ sender: Any) {
-        insertInBoard(btn: but8, pstn1: 2, pstn2: 2)
+        insertInBoard(btn: but8, pstn1: 2, pstn2: 2, player: self.player!)
     }
     
     
     //function to insert the move in the board (PVP)
-    func insertInBoard(btn: UIButton, pstn1: Int, pstn2: Int){
+    func insertInBoard(btn: UIButton, pstn1: Int, pstn2: Int, player: String){
          //pstn1 and pstn2 (position) represents the numbers os button in a matrix
         if (game?.canMakePlay(pst1: pstn1, pst2: pstn2) == true){
-            btn.setTitle(player, for: .normal)
-            player = game?.invertPlayer(player: player!)
+            btn.setTitle(self.player, for: .normal)
+            self.player = game?.invertPlayer(player: self.player!)
         }
         else{
             showAlertMessage(title: "Jogada inválida", message: "Essa posição já está ocupada. \nEscolha outra posição!")
@@ -135,19 +140,39 @@ class PvpViewController: UIViewController {
         }
         
         //check if have winner
-        if(game?.checkVitory()==0){
-            print("Jogador O venceu")
-            scoreO+=1
+        //Victory with O
+        if(game?.checkVitory()==0 && player == self.player1Choice){
+            print("Jogador 1 venceu")
+            scorePlayer1+=1
             loadScoreGame()
-            lbDrawWinner.text = "Vitória do jogador O"
+            lbDrawWinner.text = "Vitória do jogador 1: O"
             animateViewIn(view: finishGameView)
             return
         }
-        else if(game?.checkVitory()==1){
-            print("Jogador X venceu")
-            scoreX+=1
+        else if(game?.checkVitory()==0 && player != self.player1Choice){
+            print("Jogador 2 venceu")
+            scorePlayer2+=1
             loadScoreGame()
-            lbDrawWinner.text = "Vitória do jogador X"
+            lbDrawWinner.text = "Vitória do jogador 2: O"
+            animateViewIn(view: finishGameView)
+            return
+        }
+            
+        //victory with X
+        else if(game?.checkVitory()==1 && player == self.player1Choice){
+            print("Jogador 1 venceu")
+            scorePlayer1+=1
+            loadScoreGame()
+            lbDrawWinner.text = "Vitória do jogador 1: X"
+            animateViewIn(view: finishGameView)
+            return
+        }
+        
+        else if(game?.checkVitory()==1 && player != self.player1Choice){
+            print("Jogador 2 venceu")
+            scorePlayer2+=1
+            loadScoreGame()
+            lbDrawWinner.text = "Vitória do jogador 2: X"
             animateViewIn(view: finishGameView)
             return
         }
@@ -173,7 +198,7 @@ class PvpViewController: UIViewController {
     }
     
     func loadScoreGame(){
-        lbScore.text = "Score\n O: \(scoreO)      X: \(scoreX)"
+        lbScore.text = "Score\n Player 1: \(self.scorePlayer1)      Player 2: \(self.scorePlayer2)"
     }
     
     func reset()->Void{

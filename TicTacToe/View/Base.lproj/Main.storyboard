@@ -276,12 +276,12 @@
                                 <rect key="frame" x="0.0" y="325.5" width="414" height="299"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="8V1-A1-kc9">
-                                        <rect key="frame" x="53" y="88.5" width="308" height="122"/>
+                                        <rect key="frame" x="16" y="88.5" width="382" height="122"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RWo-oU-ODY">
-                                                <rect key="frame" x="0.0" y="0.0" width="308" height="43"/>
+                                                <rect key="frame" x="37" y="0.0" width="308" height="43"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitória ou empate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c5-Vg-3c8">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitória ou empate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0c5-Vg-3c8">
                                                         <rect key="frame" x="0.0" y="0.0" width="308" height="43"/>
                                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -290,7 +290,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="F9L-pF-Akp">
-                                                <rect key="frame" x="8.5" y="72" width="291" height="50"/>
+                                                <rect key="frame" x="45.5" y="72" width="291" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqU-Yd-VyN">
                                                         <rect key="frame" x="0.0" y="0.0" width="190" height="50"/>
@@ -317,7 +317,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nil-hg-wBT">
-                                        <rect key="frame" x="182" y="260.5" width="50.5" height="20.5"/>
+                                        <rect key="frame" x="182" y="268.5" width="50.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -325,9 +325,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.045875157851767809" green="0.55849460659898476" blue="0.16234512014750957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="nil-hg-wBT" secondAttribute="bottom" constant="18" id="9j7-LQ-gJ6"/>
+                                    <constraint firstAttribute="bottom" secondItem="nil-hg-wBT" secondAttribute="bottom" constant="10" id="9j7-LQ-gJ6"/>
+                                    <constraint firstAttribute="trailing" secondItem="8V1-A1-kc9" secondAttribute="trailing" constant="16" id="McJ-IR-YOx"/>
                                     <constraint firstItem="nil-hg-wBT" firstAttribute="centerX" secondItem="Tir-FC-pHm" secondAttribute="centerX" id="UdH-4h-uoc"/>
                                     <constraint firstItem="8V1-A1-kc9" firstAttribute="centerY" secondItem="Tir-FC-pHm" secondAttribute="centerY" id="pkJ-W2-8PL"/>
+                                    <constraint firstItem="8V1-A1-kc9" firstAttribute="leading" secondItem="Tir-FC-pHm" secondAttribute="leading" constant="16" id="sKb-8d-mto"/>
                                     <constraint firstItem="8V1-A1-kc9" firstAttribute="centerX" secondItem="Tir-FC-pHm" secondAttribute="centerX" id="xdX-5C-rsg"/>
                                 </constraints>
                             </view>
