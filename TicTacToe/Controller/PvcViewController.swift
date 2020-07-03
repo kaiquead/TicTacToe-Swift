@@ -153,9 +153,9 @@ class PvcViewController: UIViewController {
             return
         }
         
-        //After made my move, the function will be called again to make the computer move after 1.0 seconds of delay
+        //After made my move, the function will be called again to make the computer move after 0.6 seconds of delay
         if(player == playerChoice){
-            let _ = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
+            let _ = Timer.scheduledTimer(withTimeInterval: 0.6, repeats: false) { (timer) in
                 self.insertInBoard(btn: btn, pstn1: pstn1, pstn2: pstn2, player: self.player!)
             }
         }
@@ -270,6 +270,10 @@ class PvcViewController: UIViewController {
              DispatchQueue.main.async(execute: {
                 self.present(alert, animated: true)
         })
+    }
+    
+    func changeBackgroundCollor(view: UIView){
+        view.backgroundColor = .blue
     }
     
     

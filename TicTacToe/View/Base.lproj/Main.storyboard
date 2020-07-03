@@ -639,7 +639,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WQj-W3-13p" firstAttribute="leading" secondItem="8nm-kI-EBC" secondAttribute="leading" id="03x-eN-mbr"/>
                             <constraint firstItem="ENN-iH-oKq" firstAttribute="centerY" secondItem="8nm-kI-EBC" secondAttribute="centerY" id="1Vz-AX-Cn7"/>
