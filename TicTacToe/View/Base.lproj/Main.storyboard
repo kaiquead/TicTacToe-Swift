@@ -88,6 +88,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-vO-vme">
                                         <rect key="frame" x="60.5" y="1" width="87.5" height="92"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn0:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="NAi-0X-Hmx"/>
                                         </connections>
@@ -95,6 +98,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jT-aW-1Za">
                                         <rect key="frame" x="158.5" y="0.0" width="97" height="94"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn1:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="Whz-36-KhO"/>
                                         </connections>
@@ -102,6 +108,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9g-It-UPy">
                                         <rect key="frame" x="264" y="0.5" width="90.5" height="93"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn2:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="voA-I2-WBV"/>
                                         </connections>
@@ -109,6 +118,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3c-Qq-1fP">
                                         <rect key="frame" x="60.5" y="103.5" width="87.5" height="92"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn3:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="t17-Pn-m4O"/>
                                         </connections>
@@ -116,6 +128,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZ3-Z1-ZA9">
                                         <rect key="frame" x="160.5" y="99.5" width="93" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn4:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="rrx-8J-HyL"/>
                                         </connections>
@@ -123,6 +138,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSt-MC-7h1">
                                         <rect key="frame" x="264" y="103.5" width="90.5" height="92"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn5:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="I9Z-1y-dIC"/>
                                         </connections>
@@ -130,6 +148,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwb-yZ-MCW">
                                         <rect key="frame" x="60.5" y="211" width="87.5" height="88"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn6:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="wXR-S3-dlS"/>
                                         </connections>
@@ -137,6 +158,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyE-FH-kBi">
                                         <rect key="frame" x="161" y="211" width="92" height="88"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn7:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="56H-sx-2D6"/>
                                         </connections>
@@ -144,6 +168,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLv-Nw-W1n">
                                         <rect key="frame" x="264" y="211" width="90.5" height="88"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn8:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="bjT-tB-REM"/>
                                         </connections>
@@ -317,8 +344,8 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nil-hg-wBT">
-                                        <rect key="frame" x="182" y="268.5" width="50.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <rect key="frame" x="187" y="273" width="40" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -373,6 +400,7 @@
                         <outlet property="choseView" destination="QG0-bJ-8rS" id="EU3-FU-94D"/>
                         <outlet property="finishGameView" destination="Tir-FC-pHm" id="jdj-HU-3Al"/>
                         <outlet property="gameImage" destination="Bwp-If-cPz" id="66m-F8-pKM"/>
+                        <outlet property="gameView" destination="bYh-zB-JnU" id="JCl-we-Tvb"/>
                         <outlet property="lbDrawWinner" destination="0c5-Vg-3c8" id="Upu-5y-FkE"/>
                         <outlet property="lbScore" destination="nil-hg-wBT" id="EfX-Q7-0O1"/>
                     </connections>
@@ -548,8 +576,8 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEH-ya-8lt">
-                                        <rect key="frame" x="182" y="260.5" width="50.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <rect key="frame" x="188.5" y="266.5" width="37.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
