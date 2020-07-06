@@ -28,8 +28,6 @@ class PvpViewController: UIViewController {
     var game: Game?
     
     //Score
-    private var scoreO = 0
-    private var scoreX = 0
     private var scorePlayer1 = 0
     private var scorePlayer2 = 0
     
