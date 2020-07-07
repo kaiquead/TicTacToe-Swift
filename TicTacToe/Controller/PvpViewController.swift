@@ -148,8 +148,6 @@ class PvpViewController: UIViewController {
             loadScoreGame()
             lbDrawWinner.text = "Vitória do jogador 1: O"
             paintWinnerMoves()
-            
-            //animateViewIn(view: finishGameView)
             return
         }
         else if(game?.checkVitory()==0 && player != self.player1Choice){
@@ -158,7 +156,6 @@ class PvpViewController: UIViewController {
             loadScoreGame()
             lbDrawWinner.text = "Vitória do jogador 2: O"
             paintWinnerMoves()
-            //animateViewIn(view: finishGameView)
             return
         }
             
@@ -169,7 +166,6 @@ class PvpViewController: UIViewController {
             loadScoreGame()
             lbDrawWinner.text = "Vitória do jogador 1: X"
             paintWinnerMoves()
-            //animateViewIn(view: finishGameView)
             return
         }
         
@@ -179,7 +175,6 @@ class PvpViewController: UIViewController {
             loadScoreGame()
             lbDrawWinner.text = "Vitória do jogador 2: X"
             paintWinnerMoves()
-            //animateViewIn(view: finishGameView)
             return
         }
         
@@ -253,6 +248,7 @@ class PvpViewController: UIViewController {
         })
     }
     
+    //Whem have winner, this function will be called to paint the winner moves
     func paintWinnerMoves(){
         self.gameView.isUserInteractionEnabled = false
         

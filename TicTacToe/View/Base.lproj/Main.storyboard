@@ -370,6 +370,11 @@
                                                         <state key="normal" title="Jogar novamente" image="retry.png">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="playAgain:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="EqK-Bf-7pc"/>
                                                         </connections>
@@ -380,6 +385,11 @@
                                                         <state key="normal" title="Sair" image="back.png">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="goToMenu:" destination="c5Y-yZ-fYH" eventType="touchUpInside" id="u26-is-WJS"/>
                                                         </connections>
@@ -389,13 +399,14 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nil-hg-wBT">
-                                        <rect key="frame" x="187" y="273" width="40" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <rect key="frame" x="185.5" y="273" width="43.5" height="16"/>
+                                        <color key="backgroundColor" red="0.97201377150000001" green="0.74865943189999995" blue="0.27562105660000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.045875157851767809" green="0.55849460659898476" blue="0.16234512014750957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.2427238524" green="0.57442086940000003" blue="0.52818751340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="nil-hg-wBT" secondAttribute="bottom" constant="10" id="9j7-LQ-gJ6"/>
                                     <constraint firstAttribute="trailing" secondItem="8V1-A1-kc9" secondAttribute="trailing" constant="16" id="McJ-IR-YOx"/>
@@ -471,6 +482,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZM-aN-HIb">
                                         <rect key="frame" x="64" y="-4" width="92.5" height="99.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn0:" destination="Fkp-fq-aDW" eventType="touchUpInside" id="wFG-bn-WBM"/>
                                         </connections>
@@ -478,6 +492,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gi-hn-TXp">
                                         <rect key="frame" x="160.5" y="-4" width="93" height="99.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn1:" destination="Fkp-fq-aDW" eventType="touchUpInside" id="iwp-F7-JWr"/>
                                         </connections>
@@ -485,6 +502,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxz-5A-uGS">
                                         <rect key="frame" x="257.5" y="-4" width="92.5" height="99.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn2:" destination="Fkp-fq-aDW" eventType="touchUpInside" id="v1B-7U-3l8"/>
                                         </connections>
@@ -492,6 +512,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOA-Os-vO5">
                                         <rect key="frame" x="64" y="99.5" width="92.5" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn3:" destination="Fkp-fq-aDW" eventType="touchUpInside" id="QDL-VJ-khP"/>
                                         </connections>
@@ -499,6 +522,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Aj-9Q-DXz">
                                         <rect key="frame" x="160.5" y="99.5" width="93" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn4:" destination="Fkp-fq-aDW" eventType="touchUpInside" id="VjX-RC-aF0"/>
                                         </connections>
@@ -506,6 +532,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0H-CC-JNC">
                                         <rect key="frame" x="257.5" y="99.5" width="92.5" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn5:" destination="Fkp-fq-aDW" eventType="touchUpInside" id="rh1-pK-6ne"/>
                                         </connections>
@@ -513,6 +542,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxJ-lZ-7J6">
                                         <rect key="frame" x="64" y="203.5" width="92.5" height="99.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn6:" destination="Fkp-fq-aDW" eventType="touchUpInside" id="AxD-b0-CJG"/>
                                         </connections>
@@ -520,6 +552,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmc-kR-kZq">
                                         <rect key="frame" x="160.5" y="203.5" width="93" height="99.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn7:" destination="Fkp-fq-aDW" eventType="touchUpInside" id="f6I-m3-1jC"/>
                                         </connections>
@@ -527,6 +562,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sI9-AF-rOu">
                                         <rect key="frame" x="257.5" y="203.5" width="92.5" height="99.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btn8:" destination="Fkp-fq-aDW" eventType="touchUpInside" id="qrc-67-UVv"/>
                                         </connections>
@@ -602,6 +640,11 @@
                                                         <state key="normal" title="Jogar novamente" image="retry.png">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="btnPlayAgain:" destination="Fkp-fq-aDW" eventType="touchUpInside" id="B4J-aQ-z0K"/>
                                                         </connections>
@@ -612,6 +655,11 @@
                                                         <state key="normal" title="Sair" image="back.png">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="btnGoToMenu:" destination="Fkp-fq-aDW" eventType="touchUpInside" id="kdY-4t-sW0"/>
                                                         </connections>
@@ -621,13 +669,14 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEH-ya-8lt">
-                                        <rect key="frame" x="188.5" y="266.5" width="37.5" height="14.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <rect key="frame" x="186.5" y="266.5" width="41" height="14.5"/>
+                                        <color key="backgroundColor" red="0.97201377150000001" green="0.74865943189999995" blue="0.27562105660000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.045875157850000001" green="0.55849460660000005" blue="0.16234512009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.2427238524" green="0.57442086940000003" blue="0.52818751340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="BEH-ya-8lt" firstAttribute="centerX" secondItem="tfp-zs-z7P" secondAttribute="centerX" id="Hes-pR-BbN"/>
                                     <constraint firstAttribute="bottom" secondItem="BEH-ya-8lt" secondAttribute="bottom" constant="18" id="SlM-lW-p8d"/>

@@ -118,14 +118,16 @@ class PvcViewController: UIViewController {
                 self.scoreComputer+=1
                 loadScoreGame()
                 lbDrawWinner.text = "Vitória do computador"
-                animateViewIn(view: finishGameView)
+                //animateViewIn(view: finishGameView)
+                paintWinnerMoves()
                 return
             }else{
                 print("Jogador venceu")
                 self.scorePlayer+=1
                 loadScoreGame()
                 lbDrawWinner.text = "Vitória do jogador"
-                animateViewIn(view: finishGameView)
+                //animateViewIn(view: finishGameView)
+                paintWinnerMoves()
             return}
         }
         else if(game?.checkVitory()==1){
@@ -134,14 +136,16 @@ class PvcViewController: UIViewController {
                 self.scoreComputer+=1
                 loadScoreGame()
                 lbDrawWinner.text = "Vitória do computador"
-                animateViewIn(view: finishGameView)
+                //animateViewIn(view: finishGameView)
+                paintWinnerMoves()
                 return
             }else{
                 print("Jogador venceu")
                 self.scorePlayer+=1
                 loadScoreGame()
                 lbDrawWinner.text = "Vitória do jogador"
-                animateViewIn(view: finishGameView)
+                //animateViewIn(view: finishGameView)
+                paintWinnerMoves()
             return}
         }
         
@@ -198,19 +202,37 @@ class PvcViewController: UIViewController {
     //function to instantiate Game class to start the game
     func startGame(){
         game = Game(player: self.player!)
+        self.gameView.isUserInteractionEnabled = true
     }
     
     //function to reset the board to play again
     func reset()->Void{
         but0.setTitle(nil, for: .normal)
+        but0.setTitleColor(.blue, for: .normal)
+        
         but1.setTitle(nil, for: .normal)
+        but1.setTitleColor(.blue, for: .normal)
+        
         but2.setTitle(nil, for: .normal)
+        but2.setTitleColor(.blue, for: .normal)
+        
         but3.setTitle(nil, for: .normal)
+        but3.setTitleColor(.blue, for: .normal)
+        
         but4.setTitle(nil, for: .normal)
+        but4.setTitleColor(.blue, for: .normal)
+        
         but5.setTitle(nil, for: .normal)
+        but5.setTitleColor(.blue, for: .normal)
+        
         but6.setTitle(nil, for: .normal)
+        but6.setTitleColor(.blue, for: .normal)
+        
         but7.setTitle(nil, for: .normal)
+        but7.setTitleColor(.blue, for: .normal)
+        
         but8.setTitle(nil, for: .normal)
+        but8.setTitleColor(.blue, for: .normal)
     }
     
     //function to load the score
@@ -260,7 +282,86 @@ class PvcViewController: UIViewController {
         })
     }
     
+    func paintWinnerMoves(){
+        self.gameView.isUserInteractionEnabled = false
+        
+        let result: [String] = (game?.getWinnerParams())!
+        print("result na controler: \(result)")
+        
+        switch result {
+        case result where result == ["0", "1", "2"]:
+            timerToPaintTextButton(btn: but0)
+            timerToPaintTextButton1(btn: but1)
+            timerToPaintTextButton2(btn: but2)
+            timerToShowFinishView(view: finishGameView)
+            
+        case result where result == ["3", "4", "5"]:
+            timerToPaintTextButton(btn: but3)
+            timerToPaintTextButton1(btn: but4)
+            timerToPaintTextButton2(btn: but5)
+            timerToShowFinishView(view: finishGameView)
+            
+        case result where result == ["6", "7", "8"]:
+            timerToPaintTextButton(btn: but6)
+            timerToPaintTextButton1(btn: but7)
+            timerToPaintTextButton2(btn: but8)
+            timerToShowFinishView(view: finishGameView)
+            
+        case result where result == ["0", "3", "6"]:
+            timerToPaintTextButton(btn: but0)
+            timerToPaintTextButton1(btn: but3)
+            timerToPaintTextButton2(btn: but6)
+            timerToShowFinishView(view: finishGameView)
+            
+        case result where result == ["1", "4", "7"]:
+            timerToPaintTextButton(btn: but1)
+            timerToPaintTextButton1(btn: but4)
+            timerToPaintTextButton2(btn: but7)
+            timerToShowFinishView(view: finishGameView)
+            
+        case result where result == ["2", "5", "8"]:
+            timerToPaintTextButton(btn: but2)
+            timerToPaintTextButton1(btn: but5)
+            timerToPaintTextButton2(btn: but8)
+            timerToShowFinishView(view: finishGameView)
+            
+        case result where result == ["0", "4", "8"]:
+            timerToPaintTextButton(btn: but0)
+            timerToPaintTextButton1(btn: but4)
+            timerToPaintTextButton2(btn: but8)
+            timerToShowFinishView(view: finishGameView)
+            
+        default:
+            timerToPaintTextButton(btn: but2)
+            timerToPaintTextButton1(btn: but4)
+            timerToPaintTextButton2(btn: but6)
+            timerToShowFinishView(view: finishGameView)
+        }
+    }
     
+    func timerToPaintTextButton(btn: UIButton){
+        _ = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { (timer) in
+                btn.setTitleColor(.green, for: .normal)
+        }
+    }
+    
+    func timerToPaintTextButton1(btn: UIButton){
+        _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (timer) in
+                btn.setTitleColor(.green, for: .normal)
+        }
+    }
+    
+    func timerToPaintTextButton2(btn: UIButton){
+        _ = Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false) { (timer) in
+                btn.setTitleColor(.green, for: .normal)
+        }
+    }
+    
+    func timerToShowFinishView(view: UIView){
+        _ = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { (timer) in
+            self.animateViewIn(view: self.finishGameView)
+        }
+    }
     
     //function to create alert message in the screen
     func showAlertMessage(title: String, message: String){
