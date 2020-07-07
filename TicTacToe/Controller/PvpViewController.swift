@@ -19,6 +19,9 @@ class PvpViewController: UIViewController {
     @IBOutlet weak var lbDrawWinner: UILabel!
     @IBOutlet weak var lbScore: UILabel!
     
+    //turn
+    @IBOutlet weak var playerTurn: UILabel!
+    
     
     //Player
     var player: String?
@@ -70,6 +73,8 @@ class PvpViewController: UIViewController {
         self.player = "O"
         player1Choice = "O"
         animateViewOut(view: choseView)
+        self.playerTurn.isHidden = false
+        playerTurn.text = "Vez: Jogador I"
         startGame(player: player!)
     }
     
@@ -77,6 +82,8 @@ class PvpViewController: UIViewController {
         self.player = "X"
         player1Choice = "X"
         animateViewOut(view: choseView)
+        self.playerTurn.isHidden = false
+        playerTurn.text = "Vez: Jogador I"
         startGame(player: player!)
     }
     
@@ -134,6 +141,12 @@ class PvpViewController: UIViewController {
         if (game?.canMakePlay(pst1: pstn1, pst2: pstn2) == true){
             btn.setTitle(self.player, for: .normal)
             self.player = game?.invertPlayer(player: self.player!)
+            if(self.player == self.player1Choice){
+                self.playerTurn.text = "Vez: Jogador I"
+            }
+            else{
+                self.playerTurn.text = "Vez: Jogador II"
+            }
         }
         else{
             showAlertMessage(title: "Jogada inválida", message: "Essa posição já está ocupada. \nEscolha outra posição!")
@@ -143,6 +156,7 @@ class PvpViewController: UIViewController {
         //check if have winner
         //Victory with O
         if(game?.checkVitory()==0 && player == self.player1Choice){
+            self.playerTurn.text = "Temos um vencedor!"
             print("Jogador 1 venceu")
             scorePlayer1+=1
             loadScoreGame()
@@ -151,6 +165,7 @@ class PvpViewController: UIViewController {
             return
         }
         else if(game?.checkVitory()==0 && player != self.player1Choice){
+            self.playerTurn.text = "Temos um vencedor!"
             print("Jogador 2 venceu")
             scorePlayer2+=1
             loadScoreGame()
@@ -161,6 +176,7 @@ class PvpViewController: UIViewController {
             
         //victory with X
         else if(game?.checkVitory()==1 && player == self.player1Choice){
+            self.playerTurn.text = "Temos um vencedor!"
             print("Jogador 1 venceu")
             scorePlayer1+=1
             loadScoreGame()
@@ -170,6 +186,7 @@ class PvpViewController: UIViewController {
         }
         
         else if(game?.checkVitory()==1 && player != self.player1Choice){
+            self.playerTurn.text = "Temos um vencedor!"
             print("Jogador 2 venceu")
             scorePlayer2+=1
             loadScoreGame()
@@ -180,6 +197,7 @@ class PvpViewController: UIViewController {
         
         //If game have a draw, the finish screen will appear
         if(game?.draw() == true){
+            self.playerTurn.text = "Temos um empate!"
             print("Deu velha")
             lbDrawWinner.text = "Deu velha!!!"
             loadScoreGame()

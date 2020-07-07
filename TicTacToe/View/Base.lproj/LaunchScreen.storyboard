@@ -14,18 +14,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tictac1.png" translatesAutoresizingMaskIntoConstraints="NO" id="kMl-Ep-FPG">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="kMl-Ep-FPG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7V9-DE-Jmf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kMl-Ep-FPG" secondAttribute="bottom" id="Xat-1h-c4h"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kMl-Ep-FPG" secondAttribute="trailing" id="gaJ-A3-cYW"/>
-                            <constraint firstItem="kMl-Ep-FPG" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="zZi-nZ-YCx"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -34,7 +23,4 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="tictac1.png" width="1080" height="1920"/>
-    </resources>
 </document>

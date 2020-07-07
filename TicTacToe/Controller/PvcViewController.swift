@@ -42,6 +42,10 @@ class PvcViewController: UIViewController {
     var player:String?
     var playerChoice: String? //used to know whet is the choice of human player
     
+    //player turn
+    @IBOutlet weak var playerTurn: UILabel!
+    
+    
     //game
     var game:Game?
     
@@ -99,11 +103,23 @@ class PvcViewController: UIViewController {
             let positions = game?.canMakePlayAleatory()
             insertComputerPosition(position: positions!)
             self.player = game?.invertPlayer(player: self.player!)
+            if(self.player == self.playerChoice){
+                self.playerTurn.text = "Vez: Jogador"
+            }
+            else{
+                self.playerTurn.text = "Vez: Computador"
+            }
         }
         //if is player turn
         else if (game?.canMakePlay(pst1: pstn1, pst2: pstn2) == true){
             btn.setTitle(player, for: .normal)
             self.player = game?.invertPlayer(player: self.player!)
+            if(self.player == self.playerChoice){
+                self.playerTurn.text = "Vez: Jogador"
+            }
+            else{
+                self.playerTurn.text = "Vez: Computador"
+            }
         }
         else{
             showAlertMessage(title: "Jogada inválida", message: "Essa posição já está sendo ocupada. \nEscolha outra posição!")
@@ -114,6 +130,7 @@ class PvcViewController: UIViewController {
         if(game?.checkVitory()==0){
             //if computer win
             if(player != playerChoice){
+                self.playerTurn.text = "Temos um vencedor!"
                 print("Computador venceu")
                 self.scoreComputer+=1
                 loadScoreGame()
@@ -122,6 +139,7 @@ class PvcViewController: UIViewController {
                 paintWinnerMoves()
                 return
             }else{
+                self.playerTurn.text = "Temos um vencedor!"
                 print("Jogador venceu")
                 self.scorePlayer+=1
                 loadScoreGame()
@@ -132,6 +150,7 @@ class PvcViewController: UIViewController {
         }
         else if(game?.checkVitory()==1){
             if(player != playerChoice){
+                self.playerTurn.text = "Temos um vencedor!"
                 print("Computador venceu")
                 self.scoreComputer+=1
                 loadScoreGame()
@@ -140,6 +159,7 @@ class PvcViewController: UIViewController {
                 paintWinnerMoves()
                 return
             }else{
+                self.playerTurn.text = "Temos um vencedor!"
                 print("Jogador venceu")
                 self.scorePlayer+=1
                 loadScoreGame()
@@ -151,6 +171,7 @@ class PvcViewController: UIViewController {
         
         //If game have a draw, the finish screen will appear
         if(game?.draw() == true){
+            self.playerTurn.text = "Temos um empate!"
             print("Deu velha")
             lbDrawWinner.text = "Deu velha!!!"
             loadScoreGame()
@@ -174,9 +195,11 @@ class PvcViewController: UIViewController {
     }
     
     @IBAction func btnChoseO(_ sender: Any) {
-        player = "O"
-        playerChoice = "O"
+        self.player = "O"
+        self.playerChoice = "O"
         animateViewOut(view: choseView)
+        self.playerTurn.isHidden = false
+        self.playerTurn.text = "Vez: Jogador"
         startGame()
     }
     
@@ -184,6 +207,8 @@ class PvcViewController: UIViewController {
         player = "X"
         playerChoice = "X"
         animateViewOut(view: choseView)
+        self.playerTurn.isHidden = false
+        self.playerTurn.text = "Vez: Jogador"
         startGame()
     }
     
