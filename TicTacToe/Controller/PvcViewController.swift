@@ -52,6 +52,7 @@ class PvcViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         blackView.isHidden = false
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     @IBAction func btn0(_ sender: Any) {

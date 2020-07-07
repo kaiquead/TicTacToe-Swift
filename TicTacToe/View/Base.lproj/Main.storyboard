@@ -15,57 +15,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bem vindos ao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sf-vz-dGr">
-                                <rect key="frame" x="128" y="165" width="158" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tictac1.png" translatesAutoresizingMaskIntoConstraints="NO" id="17i-0u-fYA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHN-n6-ogX">
+                                <rect key="frame" x="49" y="618" width="317" height="224"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlL-SJ-Rqd">
+                                        <rect key="frame" x="20" y="135" width="277" height="49"/>
+                                        <color key="backgroundColor" red="0.97201377150000001" green="0.74865943189999995" blue="0.27562105660000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                        <state key="normal" title="Jogar contra o computador">
+                                            <color key="titleColor" red="0.2427238524" green="0.57442086940000003" blue="0.52818751340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Fkp-fq-aDW" kind="show" id="2kM-zn-i4V"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nessa opção cada jogador irá esperar sua vez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="nml-9e-BRj">
+                                        <rect key="frame" x="20" y="95" width="277" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nessa opção o computador joga aleatoriamente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Dlv-X7-MhQ">
+                                        <rect key="frame" x="20" y="186" width="277" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBM-K8-bAG">
+                                        <rect key="frame" x="20" y="43.5" width="277" height="49.5"/>
+                                        <color key="backgroundColor" red="0.97201377150000001" green="0.74865943189999995" blue="0.27562105660000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                        <state key="normal" title="Jogar contra um amigo localmente">
+                                            <color key="titleColor" red="0.2427238524" green="0.57442086940000003" blue="0.52818751340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="c5Y-yZ-fYH" kind="show" id="gzc-TV-SI5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nml-9e-BRj" firstAttribute="leading" secondItem="FHN-n6-ogX" secondAttribute="leading" constant="20" id="3EL-Wx-qBW"/>
+                                    <constraint firstItem="nml-9e-BRj" firstAttribute="top" secondItem="dBM-K8-bAG" secondAttribute="bottom" constant="2" id="6hl-JT-pSb"/>
+                                    <constraint firstItem="Dlv-X7-MhQ" firstAttribute="top" secondItem="KlL-SJ-Rqd" secondAttribute="bottom" constant="2" id="9nt-qd-Pk1"/>
+                                    <constraint firstItem="dBM-K8-bAG" firstAttribute="height" secondItem="FHN-n6-ogX" secondAttribute="height" multiplier="1:4.5" id="E9M-0h-1gr"/>
+                                    <constraint firstAttribute="trailing" secondItem="nml-9e-BRj" secondAttribute="trailing" constant="20" id="MXf-vx-nDp"/>
+                                    <constraint firstItem="dBM-K8-bAG" firstAttribute="leading" secondItem="FHN-n6-ogX" secondAttribute="leading" constant="20" id="P4t-nN-6fW"/>
+                                    <constraint firstItem="KlL-SJ-Rqd" firstAttribute="height" secondItem="dBM-K8-bAG" secondAttribute="height" multiplier="0.98" id="QIl-i5-aRy"/>
+                                    <constraint firstItem="KlL-SJ-Rqd" firstAttribute="top" secondItem="nml-9e-BRj" secondAttribute="bottom" constant="23" id="RLA-Ye-E2K"/>
+                                    <constraint firstItem="KlL-SJ-Rqd" firstAttribute="leading" secondItem="FHN-n6-ogX" secondAttribute="leading" constant="20" id="TE3-Fi-kAT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dlv-X7-MhQ" secondAttribute="trailing" constant="20" id="ZO9-U4-b0Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="KlL-SJ-Rqd" secondAttribute="bottom" constant="40" id="iGM-ou-UAy"/>
+                                    <constraint firstAttribute="trailing" secondItem="dBM-K8-bAG" secondAttribute="trailing" constant="20" id="iTu-i6-DAZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="KlL-SJ-Rqd" secondAttribute="trailing" constant="20" id="t8D-hS-Wzm"/>
+                                    <constraint firstItem="Dlv-X7-MhQ" firstAttribute="leading" secondItem="FHN-n6-ogX" secondAttribute="leading" constant="20" id="zAs-zT-pbI"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem vindos ao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sf-vz-dGr">
+                                <rect key="frame" x="20" y="158" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jogo da Velha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUo-y3-QmR">
-                                <rect key="frame" x="81" y="203" width="253" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBM-K8-bAG">
-                                <rect key="frame" x="69" y="424" width="277" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.82093678650000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Jogar contra um amigo localmente"/>
-                                <connections>
-                                    <segue destination="c5Y-yZ-fYH" kind="show" id="gzc-TV-SI5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlL-SJ-Rqd">
-                                <rect key="frame" x="69" y="528" width="277" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.82093678650000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Jogar contra o computador"/>
-                                <connections>
-                                    <segue destination="Fkp-fq-aDW" kind="show" id="2kM-zn-i4V"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nessa opção cada jogador irá esperar sua vez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="nml-9e-BRj">
-                                <rect key="frame" x="69" y="476" width="277" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nessa opção o computador joga aleatoriamente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Dlv-X7-MhQ">
-                                <rect key="frame" x="69" y="585" width="277" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.2427238524" green="0.57442086940000003" blue="0.52818751340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.75404280420000003" green="0.81627786160000004" blue="0.80988591909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FHN-n6-ogX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:4" id="0gY-SF-k4J"/>
+                            <constraint firstItem="17i-0u-fYA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3K2-12-j2a"/>
+                            <constraint firstItem="FHN-n6-ogX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="5gm-1v-1Yz"/>
+                            <constraint firstItem="17i-0u-fYA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8pG-Nw-9cl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FHN-n6-ogX" secondAttribute="bottom" constant="20" id="KKg-Lr-5qQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FHN-n6-ogX" secondAttribute="trailing" constant="48" id="KjO-uZ-MRw"/>
+                            <constraint firstItem="5Sf-vz-dGr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="jUn-Zc-7gl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="17i-0u-fYA" secondAttribute="trailing" id="nKZ-Mn-IXa"/>
+                            <constraint firstItem="5Sf-vz-dGr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oZe-E5-Yzx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Sf-vz-dGr" secondAttribute="trailing" constant="20" id="pS6-Tp-EEl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="17i-0u-fYA" secondAttribute="bottom" id="ype-WQ-15n"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="nBV-is-41Z"/>
+                    <connections>
+                        <outlet property="btnPvc" destination="KlL-SJ-Rqd" id="sMu-E0-Pfj"/>
+                        <outlet property="btnPvp" destination="dBM-K8-bAG" id="c1B-ew-u0d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -738,5 +783,6 @@
         <image name="back.png" width="50" height="50"/>
         <image name="retry.png" width="50" height="50"/>
         <image name="tabuleiro.png" width="462" height="462"/>
+        <image name="tictac1.png" width="1080" height="1920"/>
     </resources>
 </document>

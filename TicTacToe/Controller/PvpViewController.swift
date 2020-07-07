@@ -46,6 +46,7 @@ class PvpViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         blackView.isHidden = false
         btnGotIt.isHidden = false
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func viewDidLoad() {

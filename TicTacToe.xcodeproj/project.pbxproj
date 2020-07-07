@@ -16,6 +16,7 @@
 		EE6AC44524A3E9320035B786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6AC44324A3E9320035B786 /* Main.storyboard */; };
 		EE6AC44724A3E9360035B786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6AC44624A3E9360035B786 /* Assets.xcassets */; };
 		EE6AC44A24A3E9360035B786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6AC44824A3E9360035B786 /* LaunchScreen.storyboard */; };
+		EE6BA4C524B3E6AA007EF750 /* tictac1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6BA4C424B3E6AA007EF750 /* tictac1.png */; };
 		EECAFCEE24A6A2540076C19B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAFCED24A6A2540076C19B /* Game.swift */; };
 		EECAFCF424A6CDC90076C19B /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = EECAFCF324A6CDC90076C19B /* back.png */; };
 		EECAFCF624A6CDE00076C19B /* retry.png in Resources */ = {isa = PBXBuildFile; fileRef = EECAFCF524A6CDE00076C19B /* retry.png */; };
@@ -33,6 +34,7 @@
 		EE6AC44624A3E9360035B786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE6AC44924A3E9360035B786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE6AC44B24A3E9360035B786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE6BA4C424B3E6AA007EF750 /* tictac1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tictac1.png; path = ../../../../../Downloads/tictac1.png; sourceTree = "<group>"; };
 		EECAFCED24A6A2540076C19B /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		EECAFCF324A6CDC90076C19B /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = ../../../../../Downloads/back.png; sourceTree = "<group>"; };
 		EECAFCF524A6CDE00076C19B /* retry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retry.png; path = ../../../../../Downloads/retry.png; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		EE2B8B0124A40B71008DD622 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				EE6BA4C424B3E6AA007EF750 /* tictac1.png */,
 				EECAFCF324A6CDC90076C19B /* back.png */,
 				EECAFCF524A6CDE00076C19B /* retry.png */,
 				EE2B8B0224A40B82008DD622 /* tabuleiro.png */,
@@ -178,6 +181,7 @@
 				EE6AC44A24A3E9360035B786 /* LaunchScreen.storyboard in Resources */,
 				EECAFCF424A6CDC90076C19B /* back.png in Resources */,
 				EE6AC44724A3E9360035B786 /* Assets.xcassets in Resources */,
+				EE6BA4C524B3E6AA007EF750 /* tictac1.png in Resources */,
 				EE6AC44524A3E9320035B786 /* Main.storyboard in Resources */,
 				EECAFCF624A6CDE00076C19B /* retry.png in Resources */,
 				EE2B8B0324A40B82008DD622 /* tabuleiro.png in Resources */,
@@ -349,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaiquealves.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -366,7 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaiquealves.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
