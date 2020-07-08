@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tictac1.png" translatesAutoresizingMaskIntoConstraints="NO" id="17i-0u-fYA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tictac1" translatesAutoresizingMaskIntoConstraints="NO" id="17i-0u-fYA">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHN-n6-ogX">
@@ -133,7 +133,7 @@
                             <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYh-zB-JnU">
                                 <rect key="frame" x="0.0" y="325.5" width="414" height="299"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabuleiro.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bwp-If-cPz">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabuleiro" translatesAutoresizingMaskIntoConstraints="NO" id="Bwp-If-cPz">
                                         <rect key="frame" x="31" y="0.0" width="352" height="299"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-vO-vme">
@@ -274,13 +274,13 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QG0-bJ-8rS">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Escolha qual opção o primeiro jogador vai querer:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkC-51-f2B">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha qual opção o primeiro jogador vai querer:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkC-51-f2B">
                                         <rect key="frame" x="16" y="571.5" width="382" height="41"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="C8n-FL-puq">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="C8n-FL-puq">
                                         <rect key="frame" x="120" y="639.5" width="174" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSV-0d-zlh">
@@ -373,7 +373,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqU-Yd-VyN">
                                                         <rect key="frame" x="0.0" y="0.0" width="190" height="50"/>
                                                         <color key="backgroundColor" red="0.42378622780277303" green="0.37398078922162614" blue="0.95353204010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Jogar novamente" image="retry.png">
+                                                        <state key="normal" title="Jogar novamente" image="retry">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -388,7 +388,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOU-i8-Hcy">
                                                         <rect key="frame" x="210" y="0.0" width="81" height="50"/>
                                                         <color key="backgroundColor" red="0.39643442629999998" green="0.43918481469999998" blue="0.92212706799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Sair" image="back.png">
+                                                        <state key="normal" title="Sair" image="back">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -493,7 +493,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENN-iH-oKq">
                                 <rect key="frame" x="0.0" y="325.5" width="414" height="299"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabuleiro.png" translatesAutoresizingMaskIntoConstraints="NO" id="vOf-PZ-drk">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabuleiro" translatesAutoresizingMaskIntoConstraints="NO" id="vOf-PZ-drk">
                                         <rect key="frame" x="31" y="0.0" width="352" height="299"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZM-aN-HIb">
@@ -654,7 +654,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILm-7a-t1z">
                                                         <rect key="frame" x="0.0" y="0.0" width="190" height="50"/>
                                                         <color key="backgroundColor" red="0.42378622780000003" green="0.3739807892" blue="0.95353204010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Jogar novamente" image="retry.png">
+                                                        <state key="normal" title="Jogar novamente" image="retry">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -669,7 +669,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ilk-Cz-0hA">
                                                         <rect key="frame" x="210" y="0.0" width="81" height="50"/>
                                                         <color key="backgroundColor" red="0.39643442629999998" green="0.43918481469999998" blue="0.92212706799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Sair" image="back.png">
+                                                        <state key="normal" title="Sair" image="back">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -851,9 +851,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back.png" width="50" height="50"/>
-        <image name="retry.png" width="50" height="50"/>
-        <image name="tabuleiro.png" width="462" height="462"/>
-        <image name="tictac1.png" width="1080" height="1920"/>
+        <image name="back" width="50" height="50"/>
+        <image name="retry" width="50" height="50"/>
+        <image name="tabuleiro" width="462" height="462"/>
+        <image name="tictac1" width="1080" height="1920"/>
     </resources>
 </document>
